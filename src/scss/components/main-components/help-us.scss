@@ -1,0 +1,108 @@
+.help-us {
+    padding: 80px 0;
+}
+
+.help-us__title {
+    color: var(--Black, #303031);
+    text-align: center;
+    font-family: Righteous;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+}
+
+.help-us__subtitle {
+    color: var(--Black, #303031);
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.36px;
+    max-width: 830px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.help-us__testimonials {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.testimonials__card{
+    width: 427px;
+    height: fit-content;
+    border-radius: 16px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+}
+
+.testimonials__box {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.testimonials__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.testimonials__title {
+    color: var(--Black, #303031);
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    max-width: 369px;
+}
+
+.testimonials__descroption {
+    color: var(--Black, #303031);
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    max-width: 359px;
+}
+
+.testimonials__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.testimonials__share {
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 40px;
+    background: var(--Green, #71A894);
+    width: 66px;
+    height: 24px;
+}
+
+.testimonials__text {
+    color: var(--White, #FFF);
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+}
+
+.testimonials__date {
+    color: var(--Black, #303031);
+    text-align: right;
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+}

@@ -1,0 +1,44 @@
+.header .container {
+    display: flex;
+}
+
+.header__logo {
+    gap: 8px;
+    align-items: center;
+    display: flex;
+    color: var(--Black, #303031);
+    font-family: League Spartan;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: -1.28px;
+}
+
+.header__navigation {
+    margin-left: auto;
+}
+
+.navigation__list {
+    padding: 32px 0;
+    gap: 40px;
+    display: flex; 
+}
+
+.navigation__button {
+    transition: color 333ms;
+    color: var(--Black, #303031);
+    font-family: League Spartan;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+    margin-left: auto;
+}
+
+.navigation__other-button {
+    color: var(--Green, #71A894);
+    font-family: League Spartan;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    margin-left: auto; 
+}
