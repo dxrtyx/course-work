@@ -1,5 +1,10 @@
 .help-us {
     padding: 80px 0;
+    overflow: hidden;
+}
+
+.swiper{
+    padding: 48px 0;
 }
 
 .help-us__title {
@@ -30,8 +35,12 @@
     margin-top: 48px;
 }
 
+.swiper-slide {
+    padding: 10px;
+}
+
 .testimonials__card{
-    width: 427px;
+    width: 380px;
     height: fit-content;
     border-radius: 16px;
     background: var(--White, #FFF);
@@ -79,12 +88,16 @@
 }
 
 .testimonials__share {
+    display: flex;
+    justify-content: center;
     padding: 4px 8px;
     text-align: center;
     border-radius: 40px;
     background: var(--Green, #71A894);
-    width: 66px;
-    height: 24px;
+    width: auto;
+    align-items: center;
+    gap: 10px;
+    // height: 24px;
 }
 
 .testimonials__text {
@@ -105,4 +118,8 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.32px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--Green, #71A894);
 }
