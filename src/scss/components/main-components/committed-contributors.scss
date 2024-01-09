@@ -1,110 +1,111 @@
 .committed-contributors { 
     padding: 80px 0;
+
+    &__container { 
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title {
+        color: var(--Black, #303031);
+        font-family: Righteous;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 64px;
+        max-width: 610px;
+    }
+
+    &__subtitle {
+        color: var(--Black, #303031);
+        font-family: League Spartan;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.36px;
+        max-width: 610px;
+    }
+
+    &__interface {
+        width: 644px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: auto;
+        
+    }
 }
 
-.committed-contributors__container { 
-    display: flex;
-    align-items: center;
-}
-
-.committed-contributors__text {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.committed-contributors__title {
-    color: var(--Black, #303031);
-    font-family: Righteous;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 64px;
-    max-width: 610px;
-}
-
-.committed-contributors__subtitle {
-    color: var(--Black, #303031);
-    font-family: League Spartan;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: -0.36px;
-    max-width: 610px;
-}
-
-.committed-contributors__interface {
-    width: 644px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-left: auto;
-    
-}
-
-.interface__write-a-how {
+.write-a-how {
     border-radius: 16px;
     border: 4px solid var(--Black, #303031);
     background: var(--White, #FFF);
     box-shadow: 0 11px 0 -6px #71a894;
     position: absolute;
     top: 0;
+
+    &__box {
+        display: flex;
+        padding: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: auto;
+        height: auto;
+    }
+
+    &__title {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px; 
+        letter-spacing: -0.36px;
+        margin-top: 4px;
+    }
+
+    &__descroption {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        max-width: 335px;
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        border-radius: 40px;
+        background: var(--Green, #71A894);
+        width: fit-content;
+        height: 24px;
+        margin-left: 34px;
+    }
+
+    &__text {
+        color: var(--White, #FFF);
+        font-family: Inconsolata;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        padding: 4px 8px;
+        text-transform: uppercase;
+    }
 }
 
-.write-a-how__box {
-    display: flex;
-    padding: 24px;
-}
-
-.write-a-how__list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: auto;
-    height: auto;
-}
-
-.write-a-how__title {
-    color: var(--Black, #303031);
-    font-family: Inconsolata;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px; 
-    letter-spacing: -0.36px;
-    margin-top: 4px;
-}
-
-.write-a-how__descroption {
-    color: var(--Black, #303031);
-    font-family: Inconsolata;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.32px;
-    max-width: 335px;
-}
-
-.write-a-how__share {
-    padding: 4px 8px;
-    text-align: center;
-    border-radius: 40px;
-    background: var(--Green, #71A894);
-    width: 66px;
-    height: 24px;
-    margin-left: 34px;
-}
-
-.write-a-how__text {
-    color: var(--White, #FFF);
-    font-family: Inconsolata;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.32px;
-    text-transform: uppercase;
-}
-
-.interface__applicants {
+.applicants {
     border-radius: 16px;
     border: 4px solid var(--Black, #303031);
     background-color: #F3F0EA;;
@@ -114,68 +115,69 @@
     position: absolute;
     bottom: 24px;
     left: 7px;
+
+    &__box {
+        padding: 32px 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+        & li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    &__title {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+        letter-spacing: -0.48px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__photo {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__name {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__rating {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__grade {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        max-width: 36px;
+    }
 }
 
-.applicants__box {
-    padding: 32px 40px;
-}
-
-.applicants__list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.applicants__list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.applicants__title {
-    color: var(--Black, #303031);
-    font-family: Inconsolata;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px; /* 133.333% */
-    letter-spacing: -0.48px;
-}
-
-.applicants__card {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.applicants__photo {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-.applicants__name {
-    color: var(--Black, #303031);
-    font-family: Inconsolata;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-}
-.applicants__rating {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-.applicants__grade {
-    color: var(--Black, #303031);
-    font-family: Inconsolata;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    max-width: 36px;
-}
-
-.interface__user {
+.user {
     border-radius: 16px;
     border: 4px solid var(--Green, #71A894);
     background: var(--White, #FFF);
@@ -184,99 +186,97 @@
     position: absolute;
     bottom: 0;
     right: 4px;
-}
 
-.user__container {
-    padding: 24px; 
-}
-
-.user__list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.user__title {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-direction: column;
-}
-
-.user__photo {
-    border-radius: 50%;
-    width: 72px;
-    height: 72px;
-}
-
-.user__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-}
-
-.user__name {
-    color: var(--Black, #303031);
-    text-align: center;
-    font-family: Inconsolata;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.4px;
+    &__container {
+        padding: 24px; 
     }
 
-.user__post {
-    color: var(--Gray, #66645E);
-    text-align: center;
-    font-family: Inconsolata;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.32px;
-}
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
 
-.user__label {
-    display: flex;
-    justify-content: space-between;
-}
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-direction: column;
+    }
 
-.user__commits {
-    color: var(--Black, #303031);
-    font-family: Inconsolata;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.32px;
-}
+    &__photo {
+        border-radius: 50%;
+        width: 72px;
+        height: 72px;
+    }
 
-.user__rating {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
 
-.user__grade {
-    color: var(--Black, #303031);
-    font-family: Inconsolata;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-}
+    &__name {
+        color: var(--Black, #303031);
+        text-align: center;
+        font-family: Inconsolata;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        }
 
-.user__button {
-    display: flex;
-    padding: 12px 24px;
-    color: var(--White, #FFF);
-    font-family: Inconsolata;
-    font-size: 16px;
-    width: 192px;
-    cursor: pointer;
-    justify-content: center;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: -0.32px;
-    border-radius: 16px;
-    background: var(--Black, #303031);
+    &__post {
+        color: var(--Gray, #66645E);
+        text-align: center;
+        font-family: Inconsolata;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+    }
+
+    &__label {
+        display: flex;
+    }
+
+    &__commits {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+    }
+
+    &__rating {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    &__grade {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+    }
+
+    &__button {
+        padding: 12px 24px;
+        color: var(--White, #FFF);
+        font-family: Inconsolata;
+        font-size: 16px;
+        width: 192px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.32px;
+        border-radius: 16px;
+        background: var(--Black, #303031);
+    }
 }

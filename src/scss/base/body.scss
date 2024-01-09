@@ -14,4 +14,26 @@ body {
 
 button {
     cursor: pointer;
+    border-radius: 8px;
+
+    &:hover,
+    &:focus {
+        transition: background-color 333ms ease;
+        background-color: #6c8a7e;
+    }
+
+    &:active {
+        box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.363);
+    }
+}
+
+.navigation__button,
+.navigation__button--other {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        transition: color 333ms ease;
+        color: #96afc2;
+    }
 }

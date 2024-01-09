@@ -1,11 +1,11 @@
 .backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  opacity: 1;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
@@ -17,86 +17,93 @@
 }
 
 .modal {
+  background-color: #f3f0ea;
+  height: 100%;
+  width: 100%;
+  padding: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: silver;
-  height: 100%;
-  width: 100%;
-  padding: 30px;
 }
 .modal__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .modal__title-text {
-  color: bisque;
+  color: black;
+  font-family: League Spartan;
   font-size: 32px;
-  font-style: normal;
   font-weight: 600;
   line-height: 44px;
 }
 .modal__form {
+  gap: 30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 .modal__contact {
+  gap: 4px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
 }
 .modal__label {
-  color: gray;
-  font-size: 16px;
-  font-style: normal;
+  color: black;
+  font-family: League Spartan;
+  font-size: 18px;
   font-weight: 400;
   line-height: 24px;
 }
 .modal__input {
-  align-items: center;
+  color: #71A894;
+  background-color: #F9F9F9;
+  font-family: League Spartan;
+  font-size: 16px;
+  outline: none;
   padding: 10px 12px;
   border-radius: 8px;
-  background-color: wheat;
-  color: gray;
-  outline: none;
-  border: none;
+  border: 1px solid #71A894;
+  align-items: center;
 }
 .modal__input::placeholder {
-  color: gray;
+  color: #71A894;
 }
 .modal__textarea {
+  color: #71A894;
+  background-color: #F9F9F9;
+  font-family: League Spartan;
+  font-size: 16px;
+  outline: none;
   resize: none;
   align-items: center;
   padding: 10px 12px;
   border-radius: 8px;
-  background-color: wheat;
-  color: gray;
-  outline: none;
-  border: none;
+  border: 1px solid #71A894;
 }
 .modal__textarea::placeholder {
-  color: gray;
+  color: #71A894;
 }
 .modal__button {
   width: 100%;
-  background-color: bisque;
-  color: wheat;
-  display: flex;
-  padding: 14px 32px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+  color: white;
+  background-color: #71A894;
+  font-family: League Spartan;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
+  border-radius: 8px;
+  padding: 14px 32px;
+  display: flex;
   border: none;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: scale 0.3s ease-in-out;
+  transition: background-color 333ms ease;
 }
-.modal__button:hover {
-  scale: 1.01;
+.modal__button:hover, .modal__button:focus {
+  background-color: #6c8a7e;
+}
+.modal__button:active {
+  box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.363);
 }
 .modal__button--close {
   position: absolute;
@@ -113,7 +120,7 @@
   content: " ";
   height: 25px;
   width: 3px;
-  background-color: grey;
+  background-color: #71A894;
   border-radius: 3px;
 }
 .modal__button--close::before {
@@ -150,16 +157,17 @@
   position: fixed;
   bottom: 2%;
   right: 2%;
-  background-color: bisque;
-  padding: 20px;
+  background-color: #f3f0ea;
+  padding: 12px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: opacity 0.3s ease-in-out;
 }
 .popup__text {
+  font-weight: 500;
   text-align: center;
-  color: silver;
-  font-size: 14px;
+  color: #71A894;
+  font-size: 18px;
 }
 
 html {
@@ -178,6 +186,25 @@ body {
 
 button {
   cursor: pointer;
+  border-radius: 8px;
+}
+button:hover, button:focus {
+  transition: background-color 333ms ease;
+  background-color: #6c8a7e;
+}
+button:active {
+  box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.363);
+}
+
+.navigation__button,
+.navigation__button--other {
+  cursor: pointer;
+}
+.navigation__button:hover, .navigation__button:focus,
+.navigation__button--other:hover,
+.navigation__button--other:focus {
+  transition: color 333ms ease;
+  color: #96afc2;
 }
 
 h1,
@@ -240,23 +267,21 @@ button {
 }
 
 .navigation__button {
-  transition: color 333ms;
   color: var(--Black, #303031);
   font-family: League Spartan;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.36px;
   margin-left: auto;
 }
 
-.navigation__other-button {
+.navigation__button--other {
   color: var(--Green, #71A894);
   font-family: League Spartan;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.4px;
   margin-left: auto;
-  cursor: pointer;
 }
 
 .hero {
@@ -313,13 +338,11 @@ button {
 .hero__button {
   color: white;
   background-color: #71A894;
-  cursor: pointer;
   font-family: League Spartan;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   padding: 20px 24px;
-  border-radius: 8px;
   margin-top: 40px;
 }
 
@@ -348,13 +371,13 @@ button {
   margin-top: 24px;
 }
 
-.means-to-work__services {
+.services {
   display: flex;
   gap: 23px;
   margin-top: 48px;
 }
 
-.means-to-work__services li {
+.services li {
   width: 427px;
   height: 340px;
   border-radius: 8px;
@@ -363,7 +386,7 @@ button {
   text-align: center;
 }
 
-.means-to-work__services svg {
+.services svg {
   margin-top: 64px;
 }
 
@@ -420,7 +443,7 @@ button {
   max-width: 610px;
 }
 
-.kickstart__members {
+.members {
   border-radius: 16px;
   border: 4px solid var(--Black, #303031);
   background: var(--White, #FFF);
@@ -452,7 +475,7 @@ button {
   margin-top: 32px;
 }
 
-.members__list li {
+.members li {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -498,7 +521,33 @@ button {
   align-items: center;
 }
 
-.onboard-users__vote {
+.onboard-users__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  gap: 24px;
+}
+
+.onboard-users__title {
+  color: var(--Black, #303031);
+  font-family: Righteous;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+  max-width: 610px;
+}
+
+.onboard-users__subtitle {
+  color: var(--Black, #303031);
+  font-family: League Spartan;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+  max-width: 610px;
+}
+
+.vote {
   border-radius: 16px;
   border: 4px solid var(--Black, #303031);
   background: var(--White, #FFF);
@@ -607,33 +656,6 @@ button {
   border-radius: 16px;
   background: var(--Black, #303031);
   margin-top: 32px;
-  cursor: pointer;
-}
-
-.onboard-users__text {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  gap: 24px;
-}
-
-.onboard-users__title {
-  color: var(--Black, #303031);
-  font-family: Righteous;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 64px;
-  max-width: 610px;
-}
-
-.onboard-users__subtitle {
-  color: var(--Black, #303031);
-  font-family: League Spartan;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: -0.36px;
-  max-width: 610px;
 }
 
 .committed-contributors {
@@ -679,7 +701,7 @@ button {
   margin-left: auto;
 }
 
-.interface__write-a-how {
+.write-a-how {
   border-radius: 16px;
   border: 4px solid var(--Black, #303031);
   background: var(--White, #FFF);
@@ -722,11 +744,11 @@ button {
 }
 
 .write-a-how__share {
-  padding: 4px 8px;
-  text-align: center;
+  display: flex;
+  align-items: center;
   border-radius: 40px;
   background: var(--Green, #71A894);
-  width: 66px;
+  width: fit-content;
   height: 24px;
   margin-left: 34px;
 }
@@ -738,10 +760,11 @@ button {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.32px;
+  padding: 4px 8px;
   text-transform: uppercase;
 }
 
-.interface__applicants {
+.applicants {
   border-radius: 16px;
   border: 4px solid var(--Black, #303031);
   background-color: #F3F0EA;
@@ -763,7 +786,7 @@ button {
   gap: 24px;
 }
 
-.applicants__list li {
+.applicants li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -813,7 +836,7 @@ button {
   max-width: 36px;
 }
 
-.interface__user {
+.user {
   border-radius: 16px;
   border: 4px solid var(--Green, #71A894);
   background: var(--White, #FFF);
@@ -831,6 +854,7 @@ button {
 .user__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
@@ -876,7 +900,6 @@ button {
 
 .user__label {
   display: flex;
-  justify-content: space-between;
 }
 
 .user__commits {
@@ -892,6 +915,7 @@ button {
   display: flex;
   gap: 8px;
   align-items: center;
+  margin-left: 40px;
 }
 
 .user__grade {
@@ -904,14 +928,11 @@ button {
 }
 
 .user__button {
-  display: flex;
   padding: 12px 24px;
   color: var(--White, #FFF);
   font-family: Inconsolata;
   font-size: 16px;
   width: 192px;
-  cursor: pointer;
-  justify-content: center;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.32px;
@@ -922,10 +943,6 @@ button {
 .help-us {
   padding: 80px 0;
   overflow: hidden;
-}
-
-.swiper {
-  padding: 48px 0;
 }
 
 .help-us__title {
@@ -950,17 +967,15 @@ button {
   margin-top: 24px;
 }
 
-.help-us__testimonials {
-  display: flex;
-  gap: 24px;
-  margin-top: 48px;
+.swiper {
+  padding: 48px 0;
 }
 
 .swiper-slide {
   padding: 10px;
 }
 
-.testimonials__card {
+.swiper-slide__card {
   width: 380px;
   height: fit-content;
   border-radius: 16px;
@@ -968,19 +983,19 @@ button {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
-.testimonials__box {
+.swiper-slide__box {
   display: flex;
   flex-direction: column;
   padding: 24px;
 }
 
-.testimonials__content {
+.swiper-slide__content {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.testimonials__title {
+.swiper-slide__title {
   color: var(--Black, #303031);
   font-family: Inconsolata;
   font-size: 18px;
@@ -991,7 +1006,7 @@ button {
   max-width: 369px;
 }
 
-.testimonials__descroption {
+.swiper-slide__descroption {
   color: var(--Black, #303031);
   font-family: Inconsolata;
   font-size: 16px;
@@ -1001,14 +1016,14 @@ button {
   max-width: 359px;
 }
 
-.testimonials__bottom {
+.swiper-slide__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 24px;
 }
 
-.testimonials__share {
+.swiper-slide__share {
   display: flex;
   justify-content: center;
   padding: 4px 8px;
@@ -1020,7 +1035,7 @@ button {
   gap: 10px;
 }
 
-.testimonials__text {
+.swiper-slide__text {
   color: var(--White, #FFF);
   font-family: Inconsolata;
   font-size: 16px;
@@ -1030,7 +1045,7 @@ button {
   text-transform: uppercase;
 }
 
-.testimonials__date {
+.swiper-slide__date {
   color: var(--Black, #303031);
   text-align: right;
   font-family: Inconsolata;
@@ -1087,13 +1102,11 @@ button {
 .start__button {
   color: white;
   background-color: #71A894;
-  cursor: pointer;
   font-family: League Spartan;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   padding: 20px 24px;
-  border-radius: 8px;
   margin-top: 40px;
 }
 
@@ -1108,33 +1121,8 @@ button {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.96px;
-  cursor: pointer;
 }
 
-.footer__f-navigation {
+.footer__navigation {
   margin-left: auto;
-}
-
-.f-navigation__list {
-  padding: 32px 0;
-  gap: 40px;
-  display: flex;
-}
-
-.f-navigation__button {
-  color: var(--Black, #303031);
-  font-family: League Spartan;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: -0.4px;
-  cursor: pointer;
-}
-
-.f-navigation__other-button {
-  color: var(--Green, #71A894);
-  font-family: League Spartan;
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: -0.4px;
-  cursor: pointer;
 }

@@ -9,33 +9,8 @@
     font-size: 24px;
     font-weight: 600;
     letter-spacing: -0.96px;
-    cursor: pointer;
 }
 
-.footer__f-navigation {
+.footer__navigation {
     margin-left: auto;
-}
-
-.f-navigation__list {
-    padding: 32px 0;
-    gap: 40px;
-    display: flex; 
-}
-
-.f-navigation__button {
-    color: var(--Black, #303031);
-    font-family: League Spartan;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: -0.4px;
-    cursor: pointer;
-}
-
-.f-navigation__other-button {
-    color: var(--Green, #71A894);
-    font-family: League Spartan;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: -0.4px;
-    cursor: pointer;
-}
+}   

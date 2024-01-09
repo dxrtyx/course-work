@@ -1,63 +1,61 @@
 .hero {
     padding: 151px 0 236px;
     overflow: hidden;
-}
+    
+    &__container {
+        position: relative;
+    }
 
-.hero__container {
-    position: relative;
-}
+    &__new-model {
+        max-width: 608px;
+    }
 
-.hero__new-model {
-    max-width: 608px;
-}
+    &__title {
+        color: var(--Black, #303031);
+        font-family: Righteous;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 80px;
+    }
 
-.hero__title {
-    color: var(--Black, #303031);
-    font-family: Righteous;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 80px;
-}
+    &__subtitle {
+        color: var(--Gray, #66645E);
+        font-family: League Spartan;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.48px;
+        margin-top: 24px;
+    }
 
-.hero__subtitle {
-    color: var(--Gray, #66645E);
-    font-family: League Spartan;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.48px;
-    margin-top: 24px;
-}
+    &__images {
+        position: absolute;
+        width: 1012px;
+        height: 719.628px;
+        top: -132px;
+        right: 0;
+    }
 
-.hero__images {
-    position: absolute;
-    width: 1012px;
-    height: 719.628px;
-    top: -132px;
-    right: 0;
-}
+    &__clap-image {
+        position: absolute;
+        top: -45px;
+        right: -190px;
+    }
 
-.hero__clap-image {
-    position: absolute;
-    top: -45px;
-    right: -190px;
-}
+    &__background-image {
+        position: absolute;
+        z-index: -1;
+        top: -1px;
+        right: -190px;
+    }   
 
-.hero__background-image {
-    position: absolute;
-    z-index: -1;
-    top: -1px;
-    right: -190px;
-}   
-
-.hero__button {
-    color: white;
-    background-color: #71A894;
-    cursor: pointer;
-    font-family: League Spartan;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px; 
-    padding: 20px 24px;
-    border-radius: 8px;
-    margin-top: 40px;
+    &__button {
+        color: white;
+        background-color: #71A894;
+        font-family: League Spartan;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px; 
+        padding: 20px 24px;
+        margin-top: 40px;
+    }
 }

@@ -1,62 +1,62 @@
 .means-to-work {
     padding: 80px 0;
+
+    &__title {
+        color: var(--Black, #303031);
+        text-align: center;
+        font-family: Righteous;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+
+    &__subtitle {
+        color: var(--Black, #303031);
+        text-align: center;
+        font-family: League Spartan;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.36px;
+        max-width: 830px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
 }
 
-.means-to-work__title {
-    color: var(--Black, #303031);
-    text-align: center;
-    font-family: Righteous;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 64px;
-}
-
-.means-to-work__subtitle {
-    color: var(--Black, #303031);
-    text-align: center;
-    font-family: League Spartan;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: -0.36px;
-    max-width: 830px;
-    margin: 0 auto;
-    margin-top: 24px;
-}
-
-.means-to-work__services {
+.services {
     display: flex;
     gap: 23px;
     margin-top: 48px;
-}
 
-.means-to-work__services li{
-    width: 427px;
-    height: 340px;
-    border-radius: 8px;
-    background: var(--White, #FFF);
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
-    text-align: center;
-}
+    & li{
+        width: 427px;
+        height: 340px;
+        border-radius: 8px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+        text-align: center;
+    }
 
-.means-to-work__services svg{
-    margin-top: 64px;
-}
+    & svg{
+        margin-top: 64px;
+    }
 
-.services__title{
-    color: var(--Black, #303031);
-    font-family: League Spartan;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 32px;
-    margin-top: 24px;
-}
+    &__title{
+        color: var(--Black, #303031);
+        font-family: League Spartan;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-top: 24px;
+    }
 
-.services__description {
-    color: var(--Black, #303031);
-    font-family: League Spartan;
-    font-size: 18px;
-    line-height: 26px;
-    max-width: 360px;
-    margin: 0 auto;
-    margin-top: 16px;
+    &__description {
+        color: var(--Black, #303031);
+        font-family: League Spartan;
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 360px;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
 }
