@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700&family=League+Spartan:wght@400;500;700&family=Righteous&display=swap" rel="stylesheet">
@@ -15,11 +14,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 
+    <link rel="stylesheet" href="css/animate.css">
+
     <title>Open Enterprise</title>
 </head>
 <body>
     <!-- img/vector.jpg -->
-    <header class="header">
+    <main class="main">
+    <div class="sroller">
+        <header class="header">
     <div class="container header__container">
 
         <a class="header__logo" href="index.html">
@@ -29,15 +32,32 @@
         <nav class="header__navigation navigation">
             <ul class="navigation__list">
                 <li><a class="navigation__button" href="#1">Why Open Enterprise</a></li>
-                <li><a class="navigation__button" href="#">Features</a></li>
+                <li><a class="navigation__button" href="#2">Features</a></li>
                 <li><a class="navigation__button" href="#3">Contribute</a></li>
-                <li><a class="navigation__button--other" href="#" data-modal-open>Request early access</a></li>
+                <li><a class="navigation__button--other" data-modal-open>Request early access</a></li>
+            </ul>
+        </nav>
+
+        <button class="header__button--burger" burger-open>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    
+    <div class="burger is-hidden" burger-menu>
+        <a class="burger__button--close" burger-close></a>
+        <nav class="burger__menu menu">
+            <ul class="menu__list">
+                <li><a class="menu__button" href="#1" burger-close>Why Open Enterprise</a></li>
+                <li><a class="menu__button" href="#2" burger-close>Features</a></li>
+                <li><a class="menu__button" href="#3" burger-close>Contribute</a></li>
+                <li><a class="menu__button--other" href="#" data-modal-open burger-close>Request early access</a></li>
             </ul>
         </nav>
     </div>
 </header>
-    <main class="main">
-    <section class="hero" id="1">
+        <section class="hero" id="1">
     <div class="container hero__container">
         <div class="hero__new-model">
             <h1 class="hero__title title">A new model for open collaboration</h1>
@@ -52,7 +72,7 @@
         <button class="hero__button" type="button" data-modal-open>Request early access</button>
     </div>
 </section>
-    <section class="means-to-work">
+        <section class="means-to-work" id="2">
     <div class="container means-to-work__container">
         <h2 class="means-to-work__title title">Reimagining what it means to work</h2>
         <p class="means-to-work__subtitle subtitle">Teams and communities using Open Enterprise fundamentally unlock a reality of work that reimagines
@@ -62,27 +82,34 @@
             <li>
                 <svg width="104" height="88" viewBox="0 0 104 88" fill="none">
                     <use href="./img/icons/icons.svg#icon"></use></svg>
-                <h2 class="services__title">Modern workforce</h2>
-                <p class="services__description">Multistakeholder governance aligns employees with the organization’s wider community.</p>
+                <div class="services__text">
+                    <h2 class="services__title">Modern workforce</h2>
+                    <p class="services__description">Multistakeholder governance aligns employees with the organization’s wider community.</p>
+                </div>
             </li>
 
             <li>
                 <svg width="104" height="88" viewBox="0 0 104 88" fill="none">
                     <use href="./img/icons/icons.svg#icon2"></use></svg>
-                <h2 class="services__title">Meritocratic by design</h2>
-                <p class="services__description">Tokenized ownership aligns deeply committed individuals with the organization’s success.</p>
+                <div class="services__text">    
+                    <h2 class="services__title">Meritocratic by design</h2>
+                    <p class="services__description">Tokenized ownership aligns deeply committed individuals with the organization’s success.</p>
+                </div>
             </li>
 
             <li>
                 <svg width="104" height="88" viewBox="0 0 104 88" fill="none">
                     <use href="./img/icons/icons.svg#icon3"></use></svg>
-                <h2 class="services__title">Engineered for resilience</h2>
-                <p class="services__description">Open Enterprise supports best practices in sociocratic management.</p>
+                <div class="services__text">
+                    <h2 class="services__title">Engineered for resilience</h2>
+                    <p class="services__description">Open Enterprise supports best practices in sociocratic management.</p>
+                </div>
             </li>
         </ul>
     </div> 
 </section>
-    <section class="kickstart">
+    </div>
+    <section class="kickstart" id="3">
     <div class="container kickstart__container">
         <div class="kickstart__text">
             <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
@@ -439,7 +466,7 @@
                 <li><a class="navigation__button" href="#">Documentation</a></li>
                 <li><a class="navigation__button" href="https://github.com/dxrtyx">GitHub</a></li>
                 <li><a class="navigation__button" href="https://twitter.com">Twitter</a></li>
-                <li><a class="navigation__button--other" href="#" data-modal-open>Contact us</a></li>
+                <li><a class="navigation__button--other" data-modal-open>Contact us</a></li>
             </ul>
         </nav>
     </div>
@@ -478,5 +505,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>

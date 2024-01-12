@@ -8,9 +8,27 @@
         <nav class="header__navigation navigation">
             <ul class="navigation__list">
                 <li><a class="navigation__button" href="#1">Why Open Enterprise</a></li>
-                <li><a class="navigation__button" href="#">Features</a></li>
+                <li><a class="navigation__button" href="#2">Features</a></li>
                 <li><a class="navigation__button" href="#3">Contribute</a></li>
-                <li><a class="navigation__button--other" href="#" data-modal-open>Request early access</a></li>
+                <li><a class="navigation__button--other" data-modal-open>Request early access</a></li>
+            </ul>
+        </nav>
+
+        <button class="header__button--burger" burger-open>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    
+    <div class="burger is-hidden" burger-menu>
+        <a class="burger__button--close" burger-close></a>
+        <nav class="burger__menu menu">
+            <ul class="menu__list">
+                <li><a class="menu__button" href="#1" burger-close>Why Open Enterprise</a></li>
+                <li><a class="menu__button" href="#2" burger-close>Features</a></li>
+                <li><a class="menu__button" href="#3" burger-close>Contribute</a></li>
+                <li><a class="menu__button--other" href="#" data-modal-open burger-close>Request early access</a></li>
             </ul>
         </nav>
     </div>

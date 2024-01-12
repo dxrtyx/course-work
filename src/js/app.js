@@ -5,3 +5,5 @@ import modal from './modal/modal.js';
 import mailer from './modal/mailer.js';
 
 import help_us__swiper from './swiper/help_us__swiper.js';
+
+import burger from './burger/burger.js';

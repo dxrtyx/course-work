@@ -29,6 +29,8 @@
     padding: 48px 0;
 
     &-slide {
+        display: flex;
+        justify-content: center;
         padding: 10px;
 
         &__card{

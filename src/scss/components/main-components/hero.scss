@@ -1,7 +1,7 @@
 .hero {
-    padding: 151px 0 236px;
+    padding: 151px 0 354px;
     overflow: hidden;
-    
+
     &__container {
         position: relative;
     }
@@ -37,13 +37,14 @@
 
     &__clap-image {
         position: absolute;
+        z-index: -1;
         top: -45px;
         right: -190px;
     }
 
     &__background-image {
         position: absolute;
-        z-index: -1;
+        z-index: -2;
         top: -1px;
         right: -190px;
     }   
@@ -57,5 +58,32 @@
         line-height: 24px; 
         padding: 20px 24px;
         margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .hero {
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__images {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero__title {
+        font-size: 55px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero__title {
+        font-size: 47px;
+        font-weight: 600;
     }
 }
