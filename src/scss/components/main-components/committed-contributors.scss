@@ -296,7 +296,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 650px) {
     .committed-contributors {
         &__interface {
             display: flex;
@@ -331,7 +331,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 424px) {
     .write-a-how__descroption {
         max-width: 250px;
     }

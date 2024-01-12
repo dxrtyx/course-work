@@ -452,13 +452,13 @@ button {
     display: none;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 424px) {
   .hero__title {
     font-size: 55px;
     font-weight: 500;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 374px) {
   .hero__title {
     font-size: 47px;
     font-weight: 600;
@@ -659,7 +659,7 @@ button {
     margin-top: 48px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 550px) {
   .members__list {
     width: auto;
   }
@@ -1121,7 +1121,7 @@ button {
     margin-top: 48px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 650px) {
   .committed-contributors__interface {
     display: flex;
     flex-direction: column;
@@ -1149,7 +1149,7 @@ button {
     margin: 0;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 424px) {
   .write-a-how__descroption {
     max-width: 250px;
   }
