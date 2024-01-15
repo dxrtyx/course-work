@@ -1,0 +1,30 @@
+.footer .container {
+    align-items: center;
+    display: flex;
+    padding: 40px 18px;
+}
+
+.footer__logo {
+    color: var(--Black, #303031);
+    font-family: League Spartan;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.96px;
+}
+
+.footer__navigation {
+    margin-left: auto;
+}
+
+@media (max-width: 700px) {
+    .footer .container,
+    .navigation__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__navigation {
+        margin: 0;
+        margin-top: 48px;
+    }
+}

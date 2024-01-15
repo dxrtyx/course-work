@@ -1,0 +1,10 @@
+@use"./components/modal/modal";
+@use"./components/scroller/scroller";
+@import "./utils/mixins";
+@import "./base/body";
+@import "./base/modern-normalize";
+@import "./base/reset";
+@import "./utils/variables";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
