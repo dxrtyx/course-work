@@ -1,0 +1,214 @@
+@use '../../utils/variables' as v;
+
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    background-color: #f3f0ea;
+    height: 100%;
+    width: 100%;
+
+    padding: 25px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__title {
+        margin-bottom: 30px;
+
+        &-text {
+            color: black;
+            font-family: League Spartan;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 44px;
+        }
+    }
+
+    &__form {
+        gap: 30px;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contact {
+        gap: 4px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        color: black;
+        font-family: League Spartan;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__input {
+        color: #71A894;
+        background-color: #F9F9F9;
+        font-family: League Spartan;
+        font-size: 16px;
+
+        outline: none;
+
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #71A894;
+
+        align-items: center;
+
+        &::placeholder {
+            color: #71A894;
+        }
+    }
+
+    &__textarea {
+        color: #71A894;
+        background-color: #F9F9F9;
+        font-family: League Spartan;
+        font-size: 16px;
+
+        outline: none;
+        resize: none;
+
+        align-items: center;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #71A894;
+
+        &::placeholder {
+            color: #71A894;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        color: white;
+        background-color: #71A894;
+        font-family: League Spartan;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+    
+        border-radius: 8px;
+        padding: 14px 32px;
+        
+        display: flex;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        transition: background-color 333ms ease;
+
+        &:hover,
+        &:focus {
+            background-color: #6c8a7e;
+        }
+
+        &:active {
+            box-shadow: inset 1px 1px 10px 5px rgba(0, 0, 0, 0.363);
+        }
+
+        &--close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 24px;
+            height: 24px;
+            opacity: 1;
+            cursor: pointer;
+            
+            &::before,
+            &::after {
+                position: absolute;
+                left: 10px;
+                content: ' ';
+                height: 25px;
+                width: 3px;
+                background-color: #71A894;
+                border-radius: 3px;
+
+            }
+
+            &::before {
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 80%;
+        height: fit-content;
+
+        border-radius: 8px;
+        padding: 30px;
+
+        &__button {
+
+            &--close {
+                top: 30px;
+                right: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .modal {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal {
+        width: 35%;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background-color: #f3f0ea;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+
+    &__text {
+        font-weight: 500;
+        text-align: center;
+        color: #71A894;
+        font-size: 18px;
+    }
+}

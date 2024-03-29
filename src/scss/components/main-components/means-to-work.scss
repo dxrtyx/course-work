@@ -1,0 +1,74 @@
+.means-to-work {
+    padding: 80px 0;
+
+    &__title {
+        color: var(--Black, #303031);
+        text-align: center;
+        font-family: Righteous;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 64px;
+    }
+
+    &__subtitle {
+        color: var(--Black, #303031);
+        text-align: center;
+        font-family: League Spartan;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.36px;
+        max-width: 830px;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    margin-top: 48px;
+
+    & li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 24px;
+        border-radius: 8px;
+        background: var(--White, #FFF);
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+        gap: 24px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    &__title{
+        color: var(--Black, #303031);
+        font-family: League Spartan;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    &__description {
+        color: var(--Black, #303031);
+        font-family: League Spartan;
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 950px) { 
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

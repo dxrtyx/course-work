@@ -1,0 +1,342 @@
+.committed-contributors { 
+    padding: 80px 0;
+
+    &__container { 
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title {
+        color: var(--Black, #303031);
+        font-family: Righteous;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 64px;
+        max-width: 610px;
+    }
+
+    &__subtitle {
+        color: var(--Black, #303031);
+        font-family: League Spartan;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.36px;
+        max-width: 610px;
+    }
+
+    &__interface {
+        width: 644px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-left: auto;
+        
+    }
+}
+
+.write-a-how {
+    border-radius: 16px;
+    border: 4px solid var(--Black, #303031);
+    background: var(--White, #FFF);
+    box-shadow: 0 11px 0 -6px #71a894;
+    position: absolute;
+    top: 0;
+
+    &__box {
+        display: flex;
+        padding: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__title {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px; 
+        letter-spacing: -0.36px;
+        margin-top: 4px;
+    }
+
+    &__descroption {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        max-width: 335px;
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        border-radius: 40px;
+        background: var(--Green, #71A894);
+        width: fit-content;
+        height: 24px;
+        margin-left: 34px;
+    }
+
+    &__text {
+        color: var(--White, #FFF);
+        font-family: Inconsolata;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        padding: 4px 8px;
+        text-transform: uppercase;
+    }
+}
+
+.applicants {
+    border-radius: 16px;
+    border: 4px solid var(--Black, #303031);
+    background-color: #F3F0EA;;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 16px;
+    left: 2px;
+  
+
+    &__box {
+        padding: 32px 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 293px;
+    }
+
+        & li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    &__title {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.48px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__photo {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__name {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__rating {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__grade {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        max-width: 36px;
+    }
+}
+
+.user {
+    border-radius: 16px;
+    border: 4px solid var(--Green, #71A894);
+    background: var(--White, #FFF);
+
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+
+    &__container {
+        padding: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: fit-content;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    &__photo {
+        border-radius: 50%;
+        width: 72px;
+        height: 72px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__name {
+        color: var(--Black, #303031);
+        text-align: center;
+        font-family: Inconsolata;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        }
+
+    &__post {
+        color: var(--Gray, #66645E);
+        text-align: center;
+        font-family: Inconsolata;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+    }
+
+    &__label {
+        display: flex;
+    }
+
+    &__commits {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+    }
+
+    &__rating {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    &__grade {
+        color: var(--Black, #303031);
+        font-family: Inconsolata;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+    }
+
+    &__button {
+        padding: 12px 24px;
+        color: var(--White, #FFF);
+        font-family: Inconsolata;
+        font-size: 16px;
+        width: 192px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.32px;
+        border-radius: 16px;
+        background: var(--Black, #303031);
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .committed-contributors__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .committed-contributors__text {
+        text-align: center;
+    }
+
+    .committed-contributors__interface{
+        margin: 0;
+        margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .committed-contributors {
+        &__interface {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            width: auto;
+            height: auto;
+        }    
+    }
+
+    .write-a-how,
+    .applicants,
+    .user {
+        display: block;
+        position: static;
+    }
+
+    .write-a-how {
+        display: block;
+        position: static;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &__share {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .write-a-how__descroption {
+        max-width: 250px;
+    }
+
+    .applicants__list {
+        width: auto;
+    }
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700&family=League+Spartan:wght@400;500;700&family=Righteous&display=swap&_v=20240115185230" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css?_v=20240115185230"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240115185230">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240115185230">
+
+    <link rel="stylesheet" href="css/animate.css?_v=20240115185230">
+
+    <title>Open Enterprise</title>
+</head>
+<body>
+    <!-- img/vector.jpg -->
+    <main class="main">
+    <div class="sroller">
+        <header class="header">
+    <div class="container header__container">
+
+        <a class="header__logo" href="index.html">
+            <svg width="68" height="40" viewBox="0 0 68 40" fill="none">
+                <use href="./img/icons/icons.svg#logo"></use></svg><span>Open Enterprise</span></a>
+            
+        <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+                <li><a class="navigation__button" href="#1">Why Open Enterprise</a></li>
+                <li><a class="navigation__button" href="#2">Features</a></li>
+                <li><a class="navigation__button" href="#3">Contribute</a></li>
+                <li><a class="navigation__button--other" data-modal-open>Request early access</a></li>
+            </ul>
+        </nav>
+
+        <button class="header__button--burger" burger-open>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    
+    <div class="burger is-hidden" burger-menu>
+        <a class="burger__button--close" burger-close></a>
+        <nav class="burger__menu menu">
+            <ul class="menu__list">
+                <li><a class="menu__button" href="#1" burger-close>Why Open Enterprise</a></li>
+                <li><a class="menu__button" href="#2" burger-close>Features</a></li>
+                <li><a class="menu__button" href="#3" burger-close>Contribute</a></li>
+                <li><a class="menu__button--other" href="#" data-modal-open burger-close>Request early access</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <section class="hero" id="1">
+    <div class="container hero__container">
+        <div class="hero__new-model">
+            <h1 class="hero__title title">A new model for open collaboration</h1>
+            <p class="hero__subtitle subtitle">Run an organization where members get rewarded for their contributions with fractional ownership.</p>     
+        </div>
+
+        <div class="hero__images">
+            <img src="./img/icons/icons.svg#clap" alt="two people" class="hero__clap-image">
+            <img src="./img/icons/icons.svg#vector" alt="spot" class="hero__background-image">
+        </div>
+
+        <button class="hero__button" type="button" data-modal-open>Request early access</button>
+    </div>
+</section>
+        <section class="means-to-work" id="2">
+    <div class="container means-to-work__container">
+        <h2 class="means-to-work__title title">Reimagining what it means to work</h2>
+        <p class="means-to-work__subtitle subtitle">Teams and communities using Open Enterprise fundamentally unlock a reality of work that reimagines
+            how people engage in economic opportunity, meeting the demands and expectations of a modern organization.</p>
+        
+        <ul class="means-to-work__services services">
+            <li>
+                <svg width="104" height="88" viewBox="0 0 104 88" fill="none">
+                    <use href="./img/icons/icons.svg#icon"></use></svg>
+                <div class="services__text">
+                    <h2 class="services__title">Modern workforce</h2>
+                    <p class="services__description">Multistakeholder governance aligns employees with the organization’s wider community.</p>
+                </div>
+            </li>
+
+            <li>
+                <svg width="104" height="88" viewBox="0 0 104 88" fill="none">
+                    <use href="./img/icons/icons.svg#icon2"></use></svg>
+                <div class="services__text">    
+                    <h2 class="services__title">Meritocratic by design</h2>
+                    <p class="services__description">Tokenized ownership aligns deeply committed individuals with the organization’s success.</p>
+                </div>
+            </li>
+
+            <li>
+                <svg width="104" height="88" viewBox="0 0 104 88" fill="none">
+                    <use href="./img/icons/icons.svg#icon3"></use></svg>
+                <div class="services__text">
+                    <h2 class="services__title">Engineered for resilience</h2>
+                    <p class="services__description">Open Enterprise supports best practices in sociocratic management.</p>
+                </div>
+            </li>
+        </ul>
+    </div> 
+</section>
+    </div>
+    <section class="kickstart" id="3">
+    <div class="container kickstart__container">
+        <div class="kickstart__text">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <use href="./img/icons/icons.svg#icon4"></use></svg>
+            <h2 class="kickstart__title title">Kickstart an organization with your co-founders</h2>
+            <p class="kickstart__subtitle subtitle">It’s the early days, you just had a long conversation with two friends about a meaningful challenge that you’re
+                all passionate about and have a potential solution for. You’re ready to embark the startup journey.</p>
+        </div>
+    
+
+        <div class="kickstart__members members">
+            <div class="members__box">
+                <h3 class="members__title">Members</h3>
+
+                <ul class="members__list">
+                    <li>
+                        <picture><source srcset="img/dillon.webp" type="image/webp"><img src="img/dillon.jpg" alt="man" class="members__photo"></picture>
+                        <div class="members__text">
+                            <h4 class="members__name">Dillon Kydd</h4>
+                            <p class="members__description">100 shares</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <picture><source srcset="img/anna.webp" type="image/webp"><img src="img/anna.jpg" alt="woman" class="members__photo"></picture>
+                        <div class="members__text">
+                            <h4 class="members__name">Anna Olsen</h4>
+                            <p class="members__description">100 shares</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <picture><source srcset="img/kas.webp" type="image/webp"><img src="img/kas.jpg" alt="man" class="members__photo"></picture>
+                        <div class="members__text">
+                            <h4 class="members__name">Kas Moss</h4>
+                            <p class="members__description">100 shares</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>    
+        </div> 
+    </div>   
+</section>
+    <section class="onboard-users">
+    <div class="container onboard-users__container">
+        
+        <div class="onboard-users__vote vote">
+            <div class="vote__container">
+                <div class="vote__list">
+                    <div class="vote__title">
+                        <picture><source srcset="img/jassir.webp" type="image/webp"><img src="img/jassir.jpg" alt="man" class="vote__photo"></picture>
+                        <div class="vote__text">
+                            <h4 class="vote__name">Jassir Jonis</h4>
+                            <p class="vote__post">Pre-seed angel investor</p>
+                        </div>
+                    </div>
+
+                    <p class="vote__description">Hey guys, love what you’re doing and I’m convinced that together we’ll
+                    achieve amazing things.</p>
+                    
+                    <div class="vote__label">
+                        <div class="vote__box">
+                            <p class="vote__type">commit</p>
+                            <p class="vote__numbers">10,000 dai</p>
+                        </div>
+
+                        <div class="vote__box">
+                            <p class="vote__type">shares</p>
+                            <p class="vote__numbers">20</p>
+                        </div>
+                    </div>    
+                </div>
+
+                <button class="vote__button" type="button" data-modal-open>Go to vote</button>
+            </div>
+        </div> 
+        
+        <div class="onboard-users__text">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <use href="./img/icons/icons.svg#icon5"></use></svg>
+            <h2 class="onboard-users__title title">Onboard users, investors and advisors as you grow</h2>
+            <p class="onboard-users__subtitle subtitle">You’ve bootstrapped and delivered an MVP, and some investors and advisors are interested in having a chat with you.
+                As an Open Enterprise, you can onboard them seamlessly into your digital organization and align them with your success.</p>
+        </div>
+    </div>   
+</section>
+    <section class="committed-contributors">
+    <div class="container committed-contributors__container">
+        <div class="committed-contributors__text">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <use href="./img/icons/icons.svg#icon6"></use></svg>
+            <h2 class="committed-contributors__title title">Engage highly committed contributors</h2>
+            <p class="committed-contributors__subtitle subtitle">You need talented people on-demand across various tasks that your full-time workforce
+                 can’t prioritize at the moment. As an Open Enterprise, you can easily fund tasks and have people apply to work on them in return
+                 for funds or shares.</p>
+        </div>
+    
+
+        <div class="committed-contributors__interface interface">
+            <div class="interface__write-a-how write-a-how">
+                <div class="write-a-how__box">
+                    <div class="write-a-how__list">
+                    <h3 class="write-a-how__title">Write a how-to on Open Enterprise</h3>
+                    <p class="write-a-how__descroption">Looking for an amazing copywriter using Open Enterprise to help
+                        us write an article on how to get started.</p>
+                    </div>
+
+                    <div class="write-a-how__share">
+                        <p class="write-a-how__text">1 share</p>
+                    </div> 
+                </div>  
+            </div>
+
+            <div class="interface__applicants applicants">
+                <div class="applicants__box">
+                    <ul class="applicants__list">
+                        <h3 class="applicants__title">3 applicants</h3>
+
+                        <li>
+                            <div class="applicants__card">
+                                <picture><source srcset="img/jason.webp" type="image/webp"><img src="img/jason.jpg" alt="man" class="applicants__photo"></picture>
+                                <h4 class="applicants__name">Jason Kwon</h4>
+                            </div>
+
+                            <div class="applicants__rating">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <use href="./img/icons/icons.svg#star"></use></svg>
+                                <p class="applicants__grade">4.8</p>   
+                            </div>
+                        </li>
+    
+                        <li>
+                            <div class="applicants__card">
+                                <picture><source srcset="img/alex.webp" type="image/webp"><img src="img/alex.jpg" alt="man" class="applicants__photo"></picture>
+                                <h4 class="applicants__name">Alex Rose</h4>
+                            </div>
+
+                            <div class="applicants__rating">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <use href="./img/icons/icons.svg#star"></use></svg>
+                                <p class="applicants__grade">4.5</p>   
+                            </div>
+                        </li>
+    
+                        <li>
+                            <div class="applicants__card">
+                                <picture><source srcset="img/lizzie.webp" type="image/webp"><img src="img/lizzie.jpg" alt="man" class="applicants__photo"></picture>
+                                <h4 class="applicants__name">Lizzie Ulrich</h4>
+                            </div>
+
+                            <div class="applicants__rating">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <use href="./img/icons/icons.svg#star"></use></svg>
+                                <p class="applicants__grade">4.2</p>   
+                            </div>
+                        </li>
+                    </ul>    
+                </div>
+            </div>
+
+            <div class="interface__user user">
+                <div class="user__container">
+                    <div class="user__list">
+                        <div class="user__title">
+                            <picture><source srcset="img/alex.webp" type="image/webp"><img src="img/alex.jpg" alt="woman" class="user__photo"></picture>
+                            <div class="user__text">
+                                <h4 class="user__name">Alex Rose</h4>
+                                <p class="user__post">UX Writer</p>
+                            </div>
+                        </div>
+                        
+                        <div class="user__label">
+                            <p class="user__commits">4 commits</p>
+                            <div class="user__rating">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <use href="./img/icons/icons.svg#star"></use></svg>
+                                <p class="user__grade">4.5</p>   
+                            </div>
+                        </div>
+                        
+                        <button class="user__button" type="button" data-modal-open>View profile</button>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </div>   
+</section>
+    <section class="help-us">
+    <div class="container help-us__container">
+        <h2 class="help-us__title title">Help us improve Open Enterprise</h2>
+        <p class="help-us__subtitle subtitle">As an Open Enterprise ourselves, we are actively looking for new talent to
+            join our mission
+            of improving and delivering the Open Enterprise model to the world. Apply for open tasks and earn a stake in
+            our success.</p>
+
+        <div class="help-us__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper__slide swiper-slide"> 
+                    <div class="swiper-slide__card">
+                        <div class="swiper-slide__box">
+                            <div class="swiper-slide__content">
+                                <h3 class="swiper-slide__title">Ideate a list of features based on the Sociocracy model
+                                </h3>
+                                <p class="swiper-slide__descroption">We’re looking for someone interested in business
+                                    theory and
+                                    research that’ll help us bridge the gap between our s...</p>
+                            </div>
+
+                            <div class="swiper-slide__bottom">
+                                <div class="swiper-slide__share">
+                                    <p class="swiper-slide__text">5</p>
+                                    <p class="swiper-slide__text">aut</p>
+                                </div>
+                                <p class="swiper-slide__date">Apply by May 15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper__slide swiper-slide">
+                    <div class="swiper-slide__card">
+                        <div class="swiper-slide__box">
+                            <div class="swiper-slide__content">
+                                <h3 class="swiper-slide__title">Update documentation with FAQs</h3>
+                                <p class="swiper-slide__descroption">Review our community chat for the most frequently
+                                    asked questions
+                                    and document answers for our product docs.</p>
+                            </div>
+
+                            <div class="swiper-slide__bottom">
+                                <div class="swiper-slide__share">
+                                    <p class="swiper-slide__text">10</p>
+                                    <p class="swiper-slide__text">aut</p>
+                                </div>
+                                <p class="swiper-slide__date">Apply by May 18</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper__slide swiper-slide">
+                    <div class="swiper-slide__card">
+                        <div class="swiper-slide__box">
+                            <div class="swiper-slide__content">
+                                <h3 class="swiper-slide__title">Tutorial video series</h3>
+                                <p class="swiper-slide__descroption">Create a series of video tutorials that cover
+                                    everything from start to
+                                    finish on using Open Enterprise.</p>
+                            </div>
+
+                            <div class="swiper-slide__bottom">
+                                <div class="swiper-slide__share">
+                                    <p class="swiper-slide__text">40</p>
+                                    <p class="swiper-slide__text">aut</p>
+                                </div>
+                                <p class="swiper-slide__date">Apply by May 20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper__slide swiper-slide">
+                    <div class="swiper-slide__card">
+                        <div class="swiper-slide__box">
+                            <div class="swiper-slide__content">
+                                <h3 class="swiper-slide__title">Artist-Illustrator
+                                </h3>
+                                <p class="swiper-slide__descroption">We are looking for a creative and talented person
+                                    who knows and loves what they do.</p>
+                            </div>
+
+                            <div class="swiper-slide__bottom">
+                                <div class="swiper-slide__share">
+                                    <p class="swiper-slide__text">7</p>
+                                    <p class="swiper-slide__text">aut</p>
+                                </div>
+                                <p class="swiper-slide__date">Apply by Jun 8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper__slide swiper-slide">
+                    <div class="swiper-slide__card">
+                        <div class="swiper-slide__box">
+                            <div class="swiper-slide__content">
+                                <h3 class="swiper-slide__title">SMM-Manager</h3>
+                                <p class="swiper-slide__descroption">We are looking for a responsible person to create
+                                    and promote content in social networks.</p>
+                            </div>
+
+                            <div class="swiper-slide__bottom">
+                                <div class="swiper-slide__share">
+                                    <p class="swiper-slide__text">12</p>
+                                    <p class="swiper-slide__text">aut</p>
+                                </div>
+                                <p class="swiper-slide__date">Apply by Jun 17</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper__slide swiper-slide">
+                    <div class="swiper-slide__card">
+                        <div class="swiper-slide__box">
+                            <div class="swiper-slide__content">
+                                <h3 class="swiper-slide__title">Video-Editor</h3>
+                                <p class="swiper-slide__descroption">We are looking for people with experience in video
+                                    content processing.</p>
+                            </div>
+
+                            <div class="swiper-slide__bottom">
+                                <div class="swiper-slide__share">
+                                    <p class="swiper-slide__text">25</p>
+                                    <p class="swiper-slide__text">aut</p>
+                                </div>
+                                <p class="swiper-slide__date">Apply by Jun 25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
+</section>
+    <section class="start">
+    <div class="container start__container">
+        <div class="start__text">
+            <h2 class="start__title title">Start an Open Enterprise</h2>
+            <p class="start__subtitle subtitle">If you can’t wait to run a new or existing organization on Open Enterprise and
+                 are willing to explore and navigate the beta, we’d love to get you started.</p>
+            <button class="start__button button" type="button" data-modal-open>Request early access</button>
+        </div>
+
+        <img src="./img/icons/icons.svg#pablo" alt="pablo-sign-in" class="start__image">
+    </div>
+</section>
+</main>
+    <footer class="footer">
+    <div class="container footer__container">
+
+        <a class="footer__logo" href="index.html">Open Enterprise</a>
+            
+        <nav class="footer__navigation navigation">
+            <ul class="navigation__list">
+                <li><a class="navigation__button" href="#">Documentation</a></li>
+                <li><a class="navigation__button" href="https://github.com/dxrtyx">GitHub</a></li>
+                <li><a class="navigation__button" href="https://twitter.com">Twitter</a></li>
+                <li><a class="navigation__button--other" data-modal-open>Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <a class="modal__button--close" data-modal-close></a>
+        <div class="modal__title">
+            <p class="modal__title-text">Register</p>
+        </div>
+        <form id="form" name="form" class="modal__form">
+            <div class="modal__contact">
+                <label for="name" class="modal__label">Name</label>
+                <input data-input-field id="name" name="name" class="modal__input" type="text" required placeholder="John">
+            </div>
+            <div class="modal__contact">
+                <label for="email" class="modal__label">Email Address</label>
+                <input id="email" name="email" class="modal__input" type="email" required placeholder="john@email.com">
+            </div>
+            <div class="modal__contact">
+                <label for="message" class="modal__label">Message</label>
+                <textarea id="message" rows="5" cols="30" name="message" placeholder="Your message"
+                    class="modal__textarea"></textarea>
+            </div>
+            <input type="submit" class="modal__button" value="Send request"></input>
+        </form>
+    </div>
+</div>
+
+<div class="popup" id="registrationPopup">
+    <div class="popup__text">
+        <p>Your request has been submitted!</p>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240115185230"></script>
+    <script src="js/app.min.js?_v=20240115185230"></script>
+
+    <script src="js/wow.min.js?_v=20240115185230"></script>
+    <script>new WOW().init();</script>
+</body>
+</html>
